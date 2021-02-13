@@ -21,4 +21,4 @@ export default new Router({
       component: ExampleComponent
     },
   ]
-})
+});
