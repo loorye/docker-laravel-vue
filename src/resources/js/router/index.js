@@ -1,9 +1,10 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-Vue.use(Router)
+Vue.use(Router);
 
-import ExampleComponent from '../components/ExampleComponent.vue'
+import Home from '../components/Home.vue'
+import ExampleComponent from '../components/ExampleComponent.vue';
 
 export default new Router({
   mode: 'history',
@@ -11,7 +12,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'ExampleComponent',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/example',
+      name: 'example',
       component: ExampleComponent
     },
   ]

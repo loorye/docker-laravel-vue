@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header>Page Header</el-header>
-      <!-- <top-menu-bar /> -->
+      <top-menu-bar />
       <el-container>
         <el-main>
           <router-view/>
@@ -15,12 +14,12 @@
 
 <script>
 
-// import TopMenuBar from './components/common/TopMenuBar'
+import TopMenuBar from './components/common/TopMenuBar'
 
 export default {
-//   components: {
-//     TopMenuBar
-//   }
+  components: {
+    TopMenuBar
+  }
 }
 </script>>
 
